@@ -17,7 +17,8 @@ RUN rm -rf /srv/shiny-server/*
 
 # Get the app code
 RUN git clone https://github.com/MillerLab-CPHG/daviddev.git
-RUN cp -r PlaqView/* /srv/shiny-server/
+RUN cp -r daviddev/* /srv/shiny-server/ 
+# maybe plaqview
 
 # Make the ShinyApp available at port 80
 EXPOSE 80
